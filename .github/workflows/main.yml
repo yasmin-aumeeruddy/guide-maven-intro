@@ -37,8 +37,6 @@ jobs:
     - name: git clone
       run: |
         git submodule add https://github.com/yasmin-aumeeruddy/action-test.git action-test
-        git commit 
-        git push
     - name: Run conversion tool
       run: |
         cd action-test
