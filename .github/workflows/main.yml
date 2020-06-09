@@ -36,7 +36,6 @@ jobs:
       run: echo ${{github.repository}}
     - name: git clone
       run: |
-        git rm -r action-test
         git submodule add https://github.com/yasmin-aumeeruddy/action-test    
         git commit 
         git push
