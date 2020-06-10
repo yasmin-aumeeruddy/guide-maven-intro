@@ -21,7 +21,7 @@
 :page-seo-title: Building and testing a Java web application with Maven and Open Liberty
 :page-seo-description: A getting started tutorial with examples of how to build and test a simple Java EE or Jakarta EE web application using a Maven Project Object Model (POM) file. 
 :guide-author: Open Liberty
-= Building a web application with Maven test
+= Building a web application with Maven 
 
 [.hidden]
 NOTE: This repository contains the guide documentation source. To view the guide in published form, view it on the https://openliberty.io/guides/{projectid}.html[Open Liberty website].
