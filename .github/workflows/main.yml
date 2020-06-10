@@ -30,25 +30,5 @@ jobs:
     # Runs a single command using the runners shell
     - name: add credentials
       run: |
-        git config user.email "actions@github.com"
-        git config user.name "GitHub Actions"
-    - name: echo
-      run: echo ${{github.repository}}
-    - name: Run conversion tool
-      run: |
-        cd action-test
-        git checkout master
-        git pull
-        git init
-        rm README.md
-        javac GuideConverter.java
-        java GuideConverter ${{github.repository}}
-        cat README.md
-        ls
-    - name: commit 
-      run: git commit -m "test" 
-    - name: git push
-      run: git push
-    env:
-      # This is necessary in order to push a commit to the repo
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        run: |
+        curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/yasmin-aumeeruddy/action-list/dispatches --data '{"event_type": "build_application"}'
