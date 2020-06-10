@@ -36,8 +36,6 @@ jobs:
       run: echo ${{github.repository}}
     - name: git clone
       run: |
-        rm -r action-test
-        rmdir action-test
         git submodule add https://github.com/yasmin-aumeeruddy/action-test.git action-test
     - name: Run conversion tool
       run: |
