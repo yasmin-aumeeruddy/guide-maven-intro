@@ -120,14 +120,6 @@ All the application source code, including the Open Liberty server configuration
 
 [source, role="no_copy"]
 ----
-    └── src
-        └── main
-           └── java
-           └── resources
-           └── webapp
-           └── liberty
-                  └── config
-----
 
 // =================================================================================================
 // Creating the project POM file
