@@ -59,7 +59,7 @@ and configure Maven to run it after building the application.
 // Installing Maven
 // =================================================================================================
 
-== Installing Maven
+== Installing Maven tst
 
 If Maven isn't already installed, https://maven.apache.org/download.cgi[download the binary zip or tar.gz file^].
 Then, follow the https://maven.apache.org/install.html[installation instructions for your operating system^]
