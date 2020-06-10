@@ -34,13 +34,11 @@ jobs:
         git config user.name "GitHub Actions"
     - name: echo
       run: echo ${{github.repository}}
-    - name: git clone
-      run: |
-        git submodule add https://github.com/yasmin-aumeeruddy/action-test.git
     - name: Run conversion tool
       run: |
         cd action-test
-        git add .
+        git checkout master
+        git pull
         git init
         rm README.md
         javac GuideConverter.java
